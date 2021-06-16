@@ -1,5 +1,9 @@
 # smsExport
-smsExport reads your iOS device backup files and creates a CSV file of text messages.  It uses the messages sql database and matches up phone numbers with the addressbook database from the iOS device.  Output is a CSV file with a line by line representation of text messages.
+smsExport creates a CSV file of text messages from an iOS device which you can open in Excel or other spreadsheet program.  It does this by reading iOS device backup files, in particular the sms.db and AddressBook.sqlitedb database backups.  smsExport will match up phone numbers to the entries listed in Contacts at the time of the iOS Backup.
+
+smsExport will NOT read encrypted iOS backups.  You will need to make an unencrypted local backup of your iOS device for smsExport to work.
+
+WARNING: There is a LOT of personal and security sensitive information contained within iOS backups.  Apple recomends encrypting these backups for your own security.  Unless you are operating in a secure environment, i.e. your computer does not have any network hardware, you may decide to keep these backups encrypted. Alternatively you could do a one time unencrypted backup, run smsExport, then delete the unencrypted iOS backup.
 
 Microsoft Windows REQUIREMENTS:
 
