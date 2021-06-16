@@ -29,6 +29,6 @@ USAGE:
  
 Simply run the run the smsExport-1.1.1.pl script on the command line with "perl smsExport-1.1.1" , and it will prompt for iOS backup location if you do not want to use the defaults.
  
-smsExport will copy the files it needs to access from your MobileSync/Backup directory to a new folder on your Desktop named sms/Exports/UID/date/copiedMsyncBackupFiles.  It will also create some extra files in UID/date/tableData folder.  The main file you came here for is called (deviceName)-smsWithToFrom.csv found under UID/date.
+smsExport will copy the files it needs to access from your MobileSync/Backup directory to a new folder on your Desktop named sms/Exports/UID/date/copiedMsyncBackupFiles.  It will also create some extra files in UID/date/tableData folder.  The main file you came here for is called (deviceName)-smsWithToFrom.csv found under Desktop/smsExports/UID/date.
   
 
