@@ -3,7 +3,7 @@ smsExport reads your iOS device backup files and creates a CSV file of text mess
 
 REQUIREMENTS:
 
-1) Perl 5 interpreter.
+1) Perl 5 interpreter.<BR>
 https://www.perl.org/get.html
 
 2) sqlite3 executable.
