@@ -6,13 +6,13 @@ REQUIREMENTS:
 1) Perl 5 interpreter.<BR>
 https://www.perl.org/get.html
 
-2) sqlite3 executable.
+2) sqlite3 executable.<BR>
 https://www.sqlite.org/download.html
 
 3) A local unencrypted iOS device backup.  
-Backups can be made with iTunes or Finder on a Mac, and iTunes in Windows.
-https://www.apple.com/itunes
-https://www.apple.com/itunes/download/win32
-https://www.apple.com/itunes/download/win64
+Backups can be made with iTunes or Finder on a Mac, and iTunes in Windows.<BR>
+https://www.apple.com/itunes <BR>
+https://www.apple.com/itunes/download/win32 <BR>
+https://www.apple.com/itunes/download/win64 <BR>
 
 
