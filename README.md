@@ -7,6 +7,7 @@ smsExport will NOT read encrypted iOS backups.  You will need to make an unencry
 
 WARNING: There is a LOT of personal and security sensitive information contained within iOS backups.  Apple recomends encrypting these iOS backups for your own security.  Unless you are operating in a secure environment, i.e. your computer does not have any network hardware, you may decide to keep these backups encrypted. Alternatively you could do a one time unencrypted backup, run smsExport, then delete the unencrypted iOS backup.
 
+
 REQUIREMENTS:
 
 Microsoft Windows Requirements:
