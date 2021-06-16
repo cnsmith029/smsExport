@@ -16,3 +16,6 @@ https://www.apple.com/itunes/download/win32 <BR>
 https://www.apple.com/itunes/download/win64 <BR>
 
 
+Simply run the run the smsExport-x.x.x.pl script on the command line, and it will prompt for iOS backup location if you do not want to use the defaults.
+  
+  
