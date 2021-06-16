@@ -3,10 +3,10 @@ smsExport reads your iOS device backup files and creates a CSV file of text mess
 
 REQUIREMENTS:
 
-1) Perl 5 interpreter.<BR>
+1) Perl 5 interpreter. <BR>
 https://www.perl.org/get.html
 
-2) sqlite3 executable.<BR>
+2) sqlite3 executable. <BR>
 https://www.sqlite.org/download.html
 
 3) A local unencrypted iOS device backup.  
@@ -15,7 +15,10 @@ https://www.apple.com/itunes <BR>
 https://www.apple.com/itunes/download/win32 <BR>
 https://www.apple.com/itunes/download/win64 <BR>
 
+4) Permission to access your MobileSync/Backup directory. On macOS you may need to give Terminal full disk access (under Security and Privacy) to run this script.  You can revoke this permission after you run smsExport.
 
 Simply run the run the smsExport-x.x.x.pl script on the command line, and it will prompt for iOS backup location if you do not want to use the defaults.
+ 
+smsExport will copy the files it needs to access from your MobileSync/Backup directory to a new folder on your Desktop named copiedMsyncBackupFiles.  It will also create some extra files in tableData folder.  The main file you came here for is called (deviceName)-smsWithToFrom.csv
   
-  
+
