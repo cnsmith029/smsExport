@@ -32,17 +32,11 @@ my $thisScript = "smsExport-1.1.1.pl";
 ### Set flags for OS version, win or mac.
 
 my $macOS;
-my $MSwin;
 
 
 if ($^O =~ /darwin/i) {
 	$macOS = 1;
 }
-
-if ($^O =~ /MSWin32/i) {
-	$MSwin=1;
-}
-
 ### Define msyncBackups which is the directory where the collection of iOS
 ### backups are located.
 
@@ -50,27 +44,14 @@ my $msyncBackups;
 
 ## macOS Location
 if ($macOS) {
-	$msyncBackups= "$ENV{'HOME'}/Library/Application Support/MobileSync/Backup";
+	$msyncBackups= "$ENV{'HOME'}/Users/rosyraspberry/iCloud Drive/Backup/Backup 32adf104d5d9f1679779490c6e6791580dffe540";
 }
-
-## Windows Location
-## iOS backup directory on Windows
-if ($MSwin) {
-	$msyncBackups = "$ENV{'APPDATA'}\\Apple Computer\\MobileSync\\Backup";
-}
-
-
 ### Define smsExportsDirectory.  This is where we will copy DB files and output the files we generate.
 my $smsExportsDirectory ;
 
 ## macOS smsExportsDirectory
 if ($macOS) {
 	$smsExportsDirectory = "$ENV{'HOME'}/Desktop/smsExports";
-}
-
-## smsExportsDirectory directory on Windows
-if ($MSwin) {
-	$smsExportsDirectory = "$ENV{HOMEPATH}\\Desktop\\smsExports";
 }
 
 ## Make sure we have the info we need to continue.
@@ -84,23 +65,9 @@ my $AddressBook_sqlitedb_FILENAME = "31bb7ba8914766d4ba40d6dfb6113c8b614be442"; 
 
 ### clear command
 my $clearCommand = "clear";
-if ($MSwin) {
-	$clearCommand = "cls";
-} 
-
 
 ## sqlite3 command
 my $sqlite3 = "/usr/bin/sqlite3";
-
-if ($MSwin) {
-	$sqlite3 = "c:\\sqlite3\\sqlite3.exe";
-}
-
-
-#
-##
-#### Global variables
-###############################################################################
 
 
 #system $clearCommand;
